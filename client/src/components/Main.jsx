@@ -18,41 +18,41 @@ const Main = () => {
   return (
     <div className={styles.wrap}>
       <div className={styles.container}>
-      <h1 className={styles.heading}>Join</h1>
-      <form className={styles.form}>
-        <div className={styles.group}>
-          <input
-            type="text"
-            name="name"
-            value={values[NAME]}
-            placeholder="Username"
-            className={styles.input}
-            onChange={handleChange}
-            autoComplete="off"
-            required
-          />
-        </div>
-        <div className={styles.group}>
-          <input
-            type="text"
-            name="room"
-            value={values[ROOM]}
-            placeholder="Room"
-            className={styles.input}
-            onChange={handleChange}
-            autoComplete="off"
-            required
-          />
-        </div>
-        <Link
-          className={styles.group}
-          to={`/chat?name=${values[NAME]}&room=${values[ROOM]}`}
-        >
-          <button type="submit" className={styles.button}>
-            Sign in
-          </button>
-        </Link>
-      </form>
+        <h1 className={styles.heading}>Join</h1>
+        <form className={styles.form}>
+          <div className={styles.group}>
+            <input
+              type="text"
+              name="name"
+              value={values[NAME]}
+              placeholder="Username"
+              className={styles.input}
+              onChange={handleChange}
+              autoComplete="off"
+              required
+            />
+          </div>
+          <div className={styles.group}>
+            <input
+              type="text"
+              name="room"
+              value={values[ROOM]}
+              placeholder="Room"
+              className={styles.input}
+              onChange={handleChange}
+              autoComplete="off"
+              required
+            />
+          </div>
+          <Link
+            className={styles.group}
+            to={`/chat?name=${values[NAME]}&room=${values[ROOM]}`}
+          >
+            <button type="submit" className={styles.button}>
+              Sign in
+            </button>
+          </Link>
+        </form>
       </div>
     </div>
   );
